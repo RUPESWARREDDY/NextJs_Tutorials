@@ -5,7 +5,7 @@ export default function Archieved() {
   return (
    <Card> <div>
    archieved notifications
-   <Link href="/dashboard" className="text-blue-500 pl-4">default</Link>
+   <Link href="/complexdashboard" className="text-blue-500 pl-4">default</Link>
  </div></Card>
   )
 }

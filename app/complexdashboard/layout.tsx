@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Layout({children,revenue,users,notifications,login}:{children:React.ReactNode,revenue:React.ReactNode,users:React.ReactNode,notifications:React.ReactNode,login:React.ReactNode}) {
-   const isLogin=false;
+   const isLogin=true;
 return (
   <>
     {isLogin ? (
