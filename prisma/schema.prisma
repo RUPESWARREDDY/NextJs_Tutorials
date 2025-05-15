@@ -19,10 +19,3 @@ model Post {
   content     String
   description String
 }
-model Posts {
-  id          String   @id @default(auto()) @map("_id") @db.ObjectId
-  name        String
-  title       String
-  content     String
-  description String
-}

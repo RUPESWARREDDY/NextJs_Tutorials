@@ -1,3 +1,4 @@
+import { NextRequest } from "next/server";
 import { comments } from "../data";
 
 export async function GET(
@@ -22,13 +23,9 @@ export async function PATCH(
   return Response.json(comments[index]);
 }
 
-export async function DELETE(
-  _request: Request,
-  { params }: { params: Promise<{ id: string }> }
-) {
+export async function DELETE(request:NextRequest, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const index = comments.findIndex((comment) => comment.id === parseInt(id));
-  const deletedComment = comments[index];
   comments.splice(index, 1);
-  return Response.json(deletedComment);
+  return Response.json({ message: "deleted" });
 }
