@@ -66,7 +66,7 @@ export async function editProduct(
     errors.name = "name is required";
   }
   if (!content) {
-    errors.name = "content is required";
+    errors.content = "content is required";
   }
 
 
