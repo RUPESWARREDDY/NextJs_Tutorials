@@ -31,7 +31,7 @@ export async function createProduct(prevState: FormState, formData: FormData) {
     errors.name = "name is required";
   }
   if (!content) {
-    errors.name = "content is required";
+    errors.content= "content is required";
   }
 
   if (!description) {
